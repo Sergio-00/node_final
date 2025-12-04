@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRONT-END CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Front-end de Usuarios:</h1>
+
+    <div class="container">
+      <div>
+        <h3>Crear Usuario</h3>
+        <input id="name" placeholder="Nombre..." />
+        <input id="email" placeholder="Email..." />
+        <input id="password" placeholder="Contraseña..." />
+        <button onclick="createUser()">Añadir</button>
+      </div>
+
+      <div>
+        <h3>Actualizar Usuario</h3>
+        <input id="updateId" type="number" placeholder="ID..." />
+        <input id="updateName" placeholder="Nombre..." />
+        <input id="updateEmail" placeholder="Email..." />
+        <input id="updatePassword" placeholder="Contraseña..." />
+        <button onclick="updateUser()">Actualizar usuario</button>
+      </div>
+
+      <div>
+        <h3>Borrar usuario</h3>
+        <input id="deleteId" type="number" placeholder="ID..." />
+        <button onclick="deleteUser()">Borrar usuario</button>
+      </div>
+    </div>
+
+    <div>
+      <h3>Usuarios:</h3>
+      <pre id="output"></pre>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
